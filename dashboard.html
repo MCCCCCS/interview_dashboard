@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidate Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">Candidate Dashboard</h1>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-semibold mb-4">Candidate Applications</h2>
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-50">
+          <tr>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Candidate ID</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Application Date</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+          </tr>
+        </thead>
+        <tbody id="candidateTable" class="bg-white divide-y divide-gray-200">
+          <tr><td colspan="4" class="text-center py-4">Loading data...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    async function loadCandidates() {
+      const tableBody = document.getElementById('candidateTable');
+      try {
+        const response = await fetch('https://raw.githubusercontent.com/MCCCCCS/interview_dashboard/main/sample_candidate_data.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const candidates = data.candidates;
+
+        if (!Array.isArray(candidates)) {
+          throw new Error('Data is not an array');
+        }
+
+        tableBody.innerHTML = '';
+        candidates.forEach(candidate => {
+          if (!candidate.candidate_id || !candidate.candidate_name || !candidate.application_date || !candidate.status) {
+            console.warn('Skipping candidate with missing fields:', candidate);
+            return;
+          }
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${candidate.candidate_id}</td>
+            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${candidate.candidate_name}</td>
+            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${candidate.application_date}</td>
+            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${candidate.status}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+
+        if (tableBody.children.length === 0) {
+          tableBody.innerHTML = '<tr><td colspan="4" class="text-center py-4">No valid candidate data found</td></tr>';
+        }
+      } catch (error) {
+        console.error('Error loading candidates:', error.message);
+        tableBody.innerHTML = `<tr><td colspan="4" class="text-center py-4">Error loading data: ${error.message}</td></tr>`;
+      }
+    }
+
+    window.onload = loadCandidates;
+  </script>
+</body>
+</html>
+
