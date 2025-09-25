@@ -1,0 +1,267 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "CAND_001",
+      "candidate_name": "John Michael Doe",
+      "application_date": "2025-09-20",
+      "status": "evaluated",
+      "job_description": {
+        "position_title": "Senior Python Developer",
+        "job_id": "JOB_2025_001",
+        "requirements": [
+          "5+ years of Python development experience",
+          "Experience with Django/Flask frameworks",
+          "Knowledge of cloud platforms (AWS, Azure)",
+          "Strong problem-solving and communication skills",
+          "Experience leading development teams",
+          "Familiarity with microservices architecture"
+        ],
+        "responsibilities": [
+          "Lead backend development projects",
+          "Mentor junior developers",
+          "Design scalable system architectures",
+          "Collaborate with cross-functional teams"
+        ],
+        "full_description": "Senior Python Developer Position\n\nRequirements:\n- 5+ years of Python development experience\n- Experience with Django/Flask frameworks\n- Knowledge of cloud platforms (AWS, Azure)\n- Strong problem-solving and communication skills\n- Experience leading development teams\n- Familiarity with microservices architecture\n\nResponsibilities:\n- Lead backend development projects\n- Mentor junior developers\n- Design scalable system architectures\n- Collaborate with cross-functional teams"
+      },
+      "resume_text": "John Michael Doe\nSenior Python Developer & Technical Lead\nEmail: john.doe@email.com | Phone: (555) 123-4567\nLinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe\nLocation: San Francisco, CA\n\nPROFESSIONAL SUMMARY\nHighly experienced Senior Python Developer with 8+ years of expertise in full-stack web development, microservices architecture, and team leadership. Proven track record of delivering scalable solutions, optimizing system performance, and mentoring development teams. Passionate about clean code, best practices, and emerging technologies.\n\nPROFESSIONAL EXPERIENCE\n\nSenior Python Developer & Tech Lead | Tech Corp | San Francisco, CA | 2021 - 2024\n• Led a cross-functional team of 8 developers across 3 different microservices projects\n• Architected and implemented REST APIs using Django and Django REST Framework serving 100K+ daily active users\n• Designed and deployed microservices architecture on AWS using Docker containers and Kubernetes orchestration\n• Improved overall system performance by 45% through database optimization, caching strategies, and code refactoring\n• Established CI/CD pipelines using GitLab CI, reducing deployment time from 2 hours to 15 minutes\n• Mentored 5 junior developers, conducting code reviews and technical training sessions\n• Collaborated with Product Management and UI/UX teams to deliver customer-facing features\n• Technologies: Python 3.8+, Django, PostgreSQL, Redis, AWS (EC2, RDS, S3), Docker, Kubernetes, GitLab CI\n\nPython Developer | StartupXYZ | San Jose, CA | 2019 - 2021\n• Developed and maintained web applications using Flask and SQLAlchemy for a fintech startup\n• Built automated testing suites achieving 90+ code coverage using pytest and unittest\n• Implemented real-time data processing pipelines using Celery and RabbitMQ\n• Integrated third-party payment APIs (Stripe, PayPal) and financial data providers\n• Optimized database queries and implemented caching solutions, reducing API response times by 60%\n• Participated in agile development process, sprint planning, and daily standups\n• Technologies: Python, Flask, SQLAlchemy, PostgreSQL, Celery, RabbitMQ, Stripe API, pytest\n\nTECHNICAL SKILLS\nProgramming Languages: Python (Expert), JavaScript (Intermediate), SQL (Advanced), Bash (Intermediate)\nWeb Frameworks: Django, Flask, FastAPI, Django REST Framework\nDatabases: PostgreSQL, MySQL, MongoDB, Redis\nCloud & DevOps: AWS (EC2, RDS, S3, Lambda), Docker, Kubernetes, GitLab CI/CD, Jenkins\n\nEDUCATION\nBachelor of Science in Computer Science | University of California, Berkeley | 2017",
+      "chat_history": [
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-22T10:00:00Z",
+          "message": "Good morning John, thank you for taking the time to speak with us today. Let's start with an introduction - can you tell me about your experience with Python and web frameworks?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-22T10:00:30Z",
+          "message": "Good morning! Thank you for having me. I've been working with Python for about 8 years now, and it's really become my language of choice. At Tech Corp, I primarily used Django for building REST APIs that served over 100,000 daily active users. I really appreciate Django's batteries-included philosophy - the ORM makes database relationships intuitive, and the admin interface saves so much development time. I've also worked extensively with Flask, particularly at StartupXYZ where we built microservices. The main difference I've noticed is that Django is more opinionated and comes with more built-in features, while Flask gives you more flexibility to choose your components."
+        },
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-22T10:02:00Z",
+          "message": "That's great experience. You mentioned leading a team at Tech Corp. How did you approach leading a cross-functional team of 8 developers across different microservices projects?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-22T10:02:45Z",
+          "message": "That was definitely one of the most challenging and rewarding aspects of my role. Leadership was relatively new to me when I started, but I focused on establishing clear communication channels and creating a supportive environment. I implemented daily standups to track progress and identify blockers early. What really made a difference was setting up regular one-on-ones with each team member to understand their career goals and challenges. For the microservices coordination, I created shared documentation standards and established API contracts between services."
+        },
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-22T10:04:30Z",
+          "message": "Can you walk me through the 45% performance improvement you achieved? What was your methodology for identifying and solving those bottlenecks?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-22T10:05:15Z",
+          "message": "Absolutely. This was a systematic approach that took about 4 months to complete. We started noticing response times degrading during peak hours - some endpoints were taking up to 2 seconds. First, I implemented comprehensive monitoring using New Relic and custom metrics to identify the bottlenecks. The data showed that 60% of our slow queries were coming from the user activity tracking system. I discovered we had several N+1 query problems where we were making hundreds of individual database calls instead of using proper joins. I refactored these using Django's select_related and prefetch_related. Next, I implemented Redis caching for frequently accessed data like user profiles and product catalogs."
+        },
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-22T10:07:00Z",
+          "message": "Do you have any questions for us about the role, the team, or the company?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-22T10:07:30Z",
+          "message": "Yes, I have several questions. First, I'd love to know more about the current technical challenges the team is facing. Are there any particular areas where you're looking to improve or scale? Second, what does the team structure look like, and how do different teams collaborate? I'm also curious about your approach to professional development - do you provide opportunities for conference attendance or internal tech talks?"
+        }
+      ],
+      "evaluation_scores": {
+        "overall_score": 8.5,
+        "logical_flow_score": 8.0,
+        "content_quality_score": 9.0,
+        "skills_expression_score": 8.5,
+        "job_fit_score": 9.0,
+        "evaluation_date": "2025-09-22T11:00:00Z",
+        "evaluator": "AI_SYSTEM_v1.0"
+      },
+      "detailed_feedback": {
+        "strengths": [
+          "Strong technical knowledge in Python and web frameworks (Django, Flask)",
+          "Demonstrated leadership experience with cross-functional teams",
+          "Excellent problem-solving approach with systematic performance optimization",
+          "Clear communication skills and ability to explain complex technical concepts",
+          "Proactive approach to team coordination and documentation standards"
+        ],
+        "areas_for_improvement": [
+          "Could provide more specific examples of mentoring junior developers",
+          "Could elaborate on experience with cloud security best practices",
+          "May benefit from discussing disaster recovery and backup strategies"
+        ],
+        "hiring_recommendation": "Strong Hire - Candidate demonstrates excellent technical skills, leadership experience, and cultural fit for the role."
+      }
+    },
+    {
+      "candidate_id": "CAND_002",
+      "candidate_name": "Sarah Chen",
+      "application_date": "2025-09-18",
+      "status": "evaluated",
+      "job_description": {
+        "position_title": "Mid-Level Python Developer",
+        "job_id": "JOB_2025_002",
+        "requirements": [
+          "3-5 years of Python development experience",
+          "Experience with Django or Flask",
+          "Knowledge of databases (PostgreSQL, MySQL)",
+          "Understanding of REST APIs and web services",
+          "Experience with version control (Git)",
+          "Familiarity with testing frameworks"
+        ],
+        "responsibilities": [
+          "Develop and maintain web applications",
+          "Write clean, testable code",
+          "Participate in code reviews",
+          "Collaborate with senior developers"
+        ],
+        "full_description": "Mid-Level Python Developer Position\n\nRequirements:\n- 3-5 years of Python development experience\n- Experience with Django or Flask\n- Knowledge of databases (PostgreSQL, MySQL)\n- Understanding of REST APIs and web services\n- Experience with version control (Git)\n- Familiarity with testing frameworks\n\nResponsibilities:\n- Develop and maintain web applications\n- Write clean, testable code\n- Participate in code reviews\n- Collaborate with senior developers"
+      },
+      "resume_text": "Sarah Chen\nPython Developer\nEmail: sarah.chen@email.com | Phone: (555) 987-6543\nGitHub: github.com/sarahchen | Location: New York, NY\n\nPROFESSIONAL SUMMARY\nDedicated Python Developer with 4 years of experience building web applications using Django and Flask. Strong background in database design, API development, and automated testing. Passionate about writing clean, maintainable code and continuously learning new technologies.\n\nPROFESSIONAL EXPERIENCE\n\nPython Developer | WebTech Solutions | New York, NY | 2022 - 2024\n• Developed and maintained Django web applications for e-commerce clients\n• Built REST APIs using Django REST Framework serving 50K+ monthly users\n• Implemented automated testing suites achieving 85% code coverage using pytest\n• Collaborated with frontend developers to integrate APIs with React applications\n• Optimized database queries reducing average response time by 30%\n• Technologies: Python, Django, PostgreSQL, Redis, Docker, Git\n\nJunior Python Developer | StartupHub | Brooklyn, NY | 2021 - 2022\n• Built Flask applications for internal tools and client projects\n• Created data processing scripts for ETL operations\n• Participated in agile development process and daily standups\n• Wrote comprehensive unit tests and documentation\n• Technologies: Python, Flask, SQLAlchemy, MySQL, pytest\n\nTECHNICAL SKILLS\nProgramming Languages: Python, SQL, HTML, CSS, JavaScript (Basic)\nWeb Frameworks: Django, Flask, Django REST Framework\nDatabases: PostgreSQL, MySQL, SQLite\nTools: Git, Docker, pytest, Postman, VS Code\n\nEDUCATION\nBachelor of Science in Computer Science | NYU | 2021",
+      "chat_history": [
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-19T14:00:00Z",
+          "message": "Hi Sarah, thanks for joining us today. Can you tell me about your experience with Python web development?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-19T14:00:20Z",
+          "message": "Hi! Thanks for having me. I've been working with Python for about 4 years now. At WebTech Solutions, I primarily worked with Django to build e-commerce applications. I really enjoy Django's structure and how it handles URL routing and database models. I've also used Flask for smaller projects and internal tools. I find Flask to be more lightweight, which is great when you need something quick and don't need all of Django's features."
+        },
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-19T14:01:30Z",
+          "message": "That sounds good. Can you describe a challenging project you worked on and how you approached it?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-19T14:02:00Z",
+          "message": "One challenging project was optimizing a product catalog API that was performing poorly. The response times were over 2 seconds for some queries. I started by analyzing the database queries using Django's debug toolbar and found we had some N+1 query problems. I used select_related and prefetch_related to optimize the queries, and also added Redis caching for frequently accessed product data. We managed to reduce the response time by about 30%, which was a significant improvement."
+        },
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-19T14:03:15Z",
+          "message": "How do you approach testing in your development process?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-19T14:03:45Z",
+          "message": "Testing is really important to me. I typically write unit tests for individual functions and integration tests for API endpoints. At WebTech, we used pytest and maintained about 85% code coverage. I usually write tests as I develop features, not as an afterthought. I also like to test edge cases and error conditions to make sure the application handles them gracefully."
+        }
+      ],
+      "evaluation_scores": {
+        "overall_score": 7.0,
+        "logical_flow_score": 7.5,
+        "content_quality_score": 7.0,
+        "skills_expression_score": 6.5,
+        "job_fit_score": 8.0,
+        "evaluation_date": "2025-09-19T15:00:00Z",
+        "evaluator": "AI_SYSTEM_v1.0"
+      },
+      "detailed_feedback": {
+        "strengths": [
+          "Good foundational knowledge of Python and Django",
+          "Practical experience with performance optimization",
+          "Strong testing mindset and practices",
+          "Clear communication and problem-solving approach"
+        ],
+        "areas_for_improvement": [
+          "Could demonstrate more complex technical scenarios",
+          "Limited experience with advanced Python features",
+          "Could benefit from more leadership or mentoring experience"
+        ],
+        "hiring_recommendation": "Hire - Good fit for mid-level position with room for growth."
+      }
+    },
+    {
+      "candidate_id": "CAND_003",
+      "candidate_name": "Alex Rodriguez",
+      "application_date": "2025-09-21",
+      "status": "interviewed",
+      "job_description": {
+        "position_title": "Junior Python Developer",
+        "job_id": "JOB_2025_003",
+        "requirements": [
+          "1-2 years of Python experience or recent graduate",
+          "Basic understanding of web frameworks (Django/Flask)",
+          "Knowledge of SQL and databases",
+          "Understanding of version control (Git)",
+          "Strong problem-solving skills",
+          "Eagerness to learn and grow"
+        ],
+        "responsibilities": [
+          "Support senior developers on projects",
+          "Write and maintain Python scripts",
+          "Participate in code reviews",
+          "Learn and apply best practices"
+        ],
+        "full_description": "Junior Python Developer Position\n\nRequirements:\n- 1-2 years of Python experience or recent graduate\n- Basic understanding of web frameworks (Django/Flask)\n- Knowledge of SQL and databases\n- Understanding of version control (Git)\n- Strong problem-solving skills\n- Eagerness to learn and grow\n\nResponsibilities:\n- Support senior developers on projects\n- Write and maintain Python scripts\n- Participate in code reviews\n- Learn and apply best practices"
+      },
+      "resume_text": "Alex Rodriguez\nJunior Python Developer\nEmail: alex.rodriguez@email.com | Phone: (555) 456-7890\nGitHub: github.com/alexrod | Location: Austin, TX\n\nPROFESSIONAL SUMMARY\nRecent Computer Science graduate with 1 year of Python development experience through internships and personal projects. Passionate about backend development and eager to contribute to a collaborative team environment.\n\nPROFESSIONAL EXPERIENCE\n\nPython Development Intern | TechStart Inc | Austin, TX | Summer 2024\n• Developed Flask applications for internal data management tools\n• Created Python scripts for data processing and automation\n• Participated in code reviews and learned best practices from senior developers\n• Built simple REST APIs for internal use\n• Technologies: Python, Flask, SQLite, Git\n\nPROJECTS\nPersonal Blog Application (2024)\n• Built a blog application using Django with user authentication\n• Implemented CRUD operations for posts and comments\n• Deployed on Heroku with PostgreSQL database\n• Technologies: Django, PostgreSQL, HTML, CSS, Bootstrap\n\nTECHNICAL SKILLS\nProgramming Languages: Python, SQL, HTML, CSS, JavaScript (Basic)\nFrameworks: Django (Basic), Flask (Basic)\nDatabases: SQLite, PostgreSQL (Basic)\nTools: Git, VS Code, Postman\n\nEDUCATION\nBachelor of Science in Computer Science | University of Texas at Austin | 2024\nRelevant Coursework: Data Structures, Algorithms, Database Systems, Web Development",
+      "chat_history": [
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-21T16:00:00Z",
+          "message": "Hello Alex, welcome! As a recent graduate, can you tell me about your experience with Python and what drew you to it?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-21T16:00:25Z",
+          "message": "Hi, thank you for having me! I started learning Python in my sophomore year, and I really love how readable and versatile it is. During my internship at TechStart, I got to work on some Flask applications which was really exciting. I also built a personal blog project using Django to learn more about web development. Python just feels intuitive to me, and I love how there's usually a straightforward way to solve problems."
+        },
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-21T16:01:30Z",
+          "message": "That's great! Can you walk me through your Django blog project? What challenges did you face?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-21T16:02:10Z",
+          "message": "Sure! The blog has user registration, login, and users can create, edit, and delete their posts. Other users can comment on posts. One challenge I faced was implementing user authentication properly - I initially tried to build it from scratch, but then learned about Django's built-in authentication system which was much more secure. Another challenge was deploying to Heroku and setting up the PostgreSQL database, since I was used to SQLite in development. But I figured it out by reading the documentation and some tutorials."
+        },
+        {
+          "speaker": "interviewer",
+          "timestamp": "2025-09-21T16:03:20Z",
+          "message": "Good problem-solving approach! What are you most excited to learn as you start your career?"
+        },
+        {
+          "speaker": "candidate",
+          "timestamp": "2025-09-21T16:03:50Z",
+          "message": "I'm really excited to learn from experienced developers and see how larger applications are structured. I want to understand best practices for writing maintainable code, and I'm curious about things like testing, which I know is important but haven't done much of yet. I'm also interested in learning about different databases and maybe some DevOps concepts like Docker and deployment strategies."
+        }
+      ],
+      "evaluation_scores": {
+        "overall_score": 6.0,
+        "logical_flow_score": 6.5,
+        "content_quality_score": 5.5,
+        "skills_expression_score": 6.0,
+        "job_fit_score": 7.5,
+        "evaluation_date": "2025-09-21T17:00:00Z",
+        "evaluator": "AI_SYSTEM_v1.0"
+      },
+      "detailed_feedback": {
+        "strengths": [
+          "Genuine enthusiasm for learning and development",
+          "Good foundational understanding of Python basics",
+          "Practical project experience with Django",
+          "Honest about knowledge gaps and eager to improve",
+          "Good problem-solving mindset"
+        ],
+        "areas_for_improvement": [
+          "Limited professional experience",
+          "Needs to develop testing skills",
+          "Could benefit from more complex project experience",
+          "Should learn more about database design and optimization"
+        ],
+        "hiring_recommendation": "Hire - Good potential for junior role with proper mentoring."
+      }
+    }
+  ],
+  "metadata": {
+    "generated_date": "2025-09-25T12:00:00Z",
+    "total_candidates": 3,
+    "evaluation_system_version": "1.0",
+    "data_format_version": "2.0",
+    "notes": "Sample data for HR automation system testing and demonstration"
+  }
+}
